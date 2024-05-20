@@ -18,8 +18,11 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
       .video-fluid {
-        width: 50%;
-        height: 25%;
+        max-width: 100%;
+        height: auto;
+      }
+      .video-container {
+        max-width: 300px; /* Adjust this value as needed */
       }
     </style>
   </head>
@@ -95,7 +98,11 @@
         </div>
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-            <img src="pokeball.png" alt="Image of your project" class="img-fluid">
+            <div class="video-container">
+              <video src="Videodemo.mp4" controls class="video-fluid">
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
@@ -122,9 +129,6 @@
                 Additionally, I utilized agile methodologies to iteratively improve the simulator based on feedback and testing. This iterative approach ensured that the final product met the desired quality and functionality standards.
               </p>
               <p>Check out this video demo of our Pokémon simulator in action!</p>
-              <video src="Videodemo.mp4" controls class="video-fluid">
-                Your browser does not support the video tag.
-              </video>
             </div>
           </div>
         </div>
